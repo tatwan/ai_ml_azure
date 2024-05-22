@@ -8,17 +8,6 @@ lab:
 
 Azure AI Vision enables you to train custom models to classify and detect objects with labels you specify. In this lab, we'll build a custom image classification model to classify images of fruit.
 
-## Clone the repository for this course
-
-If you have not already cloned the **Azure AI Vision** code repository to the environment where you're working on this lab, follow these steps to do so. Otherwise, open the cloned folder in Visual Studio Code.
-
-1. Start Visual Studio Code.
-2. Open the palette (SHIFT+CTRL+P) and run a **Git: Clone** command to clone the `https://github.com/MicrosoftLearning/mslearn-ai-vision` repository to a local folder (it doesn't matter which folder).
-3. When the repository has been cloned, open the folder in Visual Studio Code.
-4. Wait while additional files are installed to support the C# code projects in the repo.
-
-    > **Note**: If you are prompted to add required assets to build and debug, select **Not Now**. If you are prompted with the Message *Detected an Azure Function Project in folder*, you can safely close that message.
-
 ## Provision Azure resources
 
 If you don't already have one in your subscription, you'll need to provision an **Azure AI Services** resource.
@@ -38,6 +27,10 @@ If you don't already have one in your subscription, you'll need to provision an 
 
 We also need a storage account to store the training images.
 
+> **NOTE**
+>
+> You can use your existing **Storage Account** that you created in previous labs. The instructor will demonstrate this and how to use it. Hence, if you do, you can skip this section for creating the Storage Accounts
+
 1. In Azure portal, search for and select **Storage accounts**, and create a new storage account with the following settings:
     - **Subscription**: *Your Azure subscription*
     - **Resource Group**: *Choose the same resource group you created your Azure AI Service resource in*
@@ -46,18 +39,29 @@ We also need a storage account to store the training images.
     - **Region**: *Choose the same region you used for your Azure AI Service resource*
     - **Performance**: Standard
     - **Redundancy**: Locally-redundant storage (LRS)
-1. While your storage account is being created, go to Visual studio code, and expand the **Labfiles/02-image-classification** folder.
-1. In that folder, select **replace.ps1** and review the code. You'll see that it replaces the name of your storage account for the placeholder in a JSON file (the COCO file) we use in a later step. Replace the placeholder *in the first line only* of the file with the name of your storage account. Save the file.
-1. Right-click on the **02-image-classification** folder and open an Integrated Terminal. Run the following command.
+    
+1. While your storage account is being created, go to Visual studio code, and expand the  **image-classification** folder.
+
+1. Open the `training_labels.json` file you should see the following 
 
     ```powershell
-    ./replace.ps1
+    {
+          "id": 1,
+          "width": 1024,
+          "height": 768,
+          "file_name": "IMG_20200229_164823.jpg",
+          "coco_url": "AmlDatastore://fruit/IMG_20200229_164823.jpg",
+          "absolute_url": "https://azmltatwan0995759167.blob.core.windows.net/fruit/IMG_20200229_164823.jpg",
+          "date_captured": "2023-12-07T22:52:56.1086527Z"
+        }
     ```
 
-1. You can review the COCO file to ensure your storage account name is there. Select **training-images/training_labels.json** and view the first few entries. In the *absolute_url* field, you should see something similar to *"https://myStorage.blob.core.windows.net/fruit/...*. If you don't see the change expected, make sure you updated only the first placeholder in the PowerShell script.
-1. Close both the JSON and PowerShell file, and go back to your browser window.
+1. You can review the COCO file to ensure your storage account name is there. Select **training_labels.json** and view the first few entries. In the *absolute_url* field, you should see something similar to *"https://myStorage.blob.core.windows.net/fruit/...*. You will need to update the `absolute_url` to point to your Storage Account and Container that contains the images.
+
 1. Your storage account should be complete. Go to your storage account.
+
 1. Enable public access on the storage account. In the left pane, navigate to **Configuration** in the **Settings** group, and enable *Allow Blob anonymous access*. Select **Save**
+
 1. In the left pane, select **Containers** and create a new container named `fruit`, and set **Anonymous access level** to *Container (anonymous read access for containers and blobs)*.
 
     > **Note**: If the **Anonymous access level** is disabled, refresh the browser page.
@@ -100,7 +104,7 @@ Here you can view the performance of the training job. Review the precision and 
 Your model has been trained and is ready to test.
 
 1. On the top of the page for your custom model, select **Try it out**.
-1. Select the **classifyfruit** model from the dropdown specifying the model you want to use, and browse to the **02-image-classification\test-images** folder.
+1. Select the **classifyfruit** model from the dropdown specifying the model you want to use, and browse to the  **test-images** folder.
 1. Select each image and view the results. Select the **JSON** tab in the results box to examine the full JSON response.
 
 <!-- Option coding example to run-->
