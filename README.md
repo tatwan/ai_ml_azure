@@ -2,7 +2,22 @@
 
 
 
+![image-20240523234324682](images/image-20240523234324682.png) ![image-20240523234332765](images/image-20240523234332765.png)
 
+
+
+## Certification Pages
+
+* DP-100 [main](https://learn.microsoft.com/en-us/credentials/certifications/azure-data-scientist/?practice-assessment-type=certification)
+* AI-102 [main](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/?practice-assessment-type=certification)
+
+### Practice Exame
+
+* Official 
+  * DP-100 [Practice Exam](https://learn.microsoft.com/en-us/credentials/certifications/azure-data-scientist/practice/assessment?assessment-type=practice&assessmentId=62&practice-assessment-type=certification)
+  * AI-102 [Practice Exam](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/practice/assessment?assessment-type=practice&assessmentId=61&practice-assessment-type=certification)
+* Whizlab https://www.whizlabs.com
+* https://www.testpreptraining.com
 
 ### AI Machine Learning Studio 
 
