@@ -29,4 +29,4 @@
   * **Azure AI Vision Studio** https://portal.vision.cognitive.azure.com/gallery/featured
   * **Azure AI Language Studio** https://language.cognitive.azure.com
 * Azure AI Services Multi-Service Account
-* 
+* AI Studio https://ai.azure.com/
