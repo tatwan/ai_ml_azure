@@ -4,8 +4,12 @@
 
 ## Certification Pages
 
-* [DP-100](https://learn.microsoft.com/en-us/credentials/certifications/azure-data-scientist/?practice-assessment-type=certification) ![image-20240523234324682](images/image-20240523234324682.png)
-* [AI-102](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/?practice-assessment-type=certification)  ![image-20240523234332765](images/image-20240523234332765.png)
+![image-20240523234332765](images/image-20240523234332765.png)![image-20240523234324682](images/image-20240523234324682.png)
+
+
+
+* [DP-100](https://learn.microsoft.com/en-us/credentials/certifications/azure-data-scientist/?practice-assessment-type=certification) 
+* [AI-102](https://learn.microsoft.com/en-us/credentials/certifications/azure-ai-engineer/?practice-assessment-type=certification)  
 
 ### Practice Exams
 
