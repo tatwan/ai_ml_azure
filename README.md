@@ -26,6 +26,8 @@
 * AI/ML Primer
   * Introduction to AI/ML concepts
   * Supervised vs Unsupervised Machine Learning 
+    * [Supervised Learning](https://scikit-learn.org/stable/supervised_learning.html)
+    * [Unsupervised Learning](https://scikit-learn.org/stable/unsupervised_learning.html)
   * Classification 
   * Regression 
   * Clustering 
@@ -35,13 +37,14 @@
     * Categorical Encoding/One-Hot Encoding
     * Train/Test Split
     * K-fold Cross Validation 
-
+  
   * Model Training/Fitting
   * Model Evaluation 
+    * [Model Selection and Evaluation](https://scikit-learn.org/stable/model_selection.html)
   * CRISP-DM
   * Model Inferencing
   * MLOps
-
+  
 * Intro to Azure ML Workspace
 * [Azure Machine Learning Studio]( https://ml.azure.com)
 
@@ -53,6 +56,22 @@
 * Using Automated ML in Azure ML Studio
 
 * Using Designer in Azure ML Studio
+
+
+### Azure AutoML Algorithms 
+
+| Functionality                   | Description                                                  | component                                                    |
+| :------------------------------ | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| Classification                  | Component that kicks off an AutoML job to train a classification model within an Azure Machine Learning pipeline | [AutoML Classification](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference-v2/classification?view=azureml-api-2) |
+| Regression                      | Component that kicks off an AutoML job to train a regression model within an Azure Machine Learning pipeline. | [AutoML Regression](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference-v2/regression?view=azureml-api-2) |
+| Forecasting                     | Component that kicks off an AutoML job to train a forecasting model within an Azure Machine Learning pipeline. | [AutoML Forecasting](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference-v2/forecasting?view=azureml-api-2) |
+| Image Classification            | Component that kicks off an AutoML job to train an image classification model within an Azure Machine Learning pipeline | [Image Classification](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference-v2/image-classification?view=azureml-api-2) |
+| Multilabel Image Classification | Component that kicks off an AutoML job to train a multilabel image classification model within an Azure Machine Learning pipeline | [Image Classification Multilabel](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference-v2/image-classification-multilabel?view=azureml-api-2) |
+| Image Object Detection          | Component that kicks off an AutoML job to train an image object detection model within an Azure Machine Learning pipeline | [Image Object Detection](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference-v2/image-object-detection?view=azureml-api-2) |
+| Image Instance Segmentation     | Component that kicks off an AutoML job to train an image instance segmentation model within an Azure Machine Learning pipeline | [Image Instance Segmentation](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference-v2/image-instance-segmentation?view=azureml-api-2) |
+| Multilabel Text Classification  | Component that kicks off an AutoML job to train a multilabel NLP text classification model within an Azure Machine Learning pipeline. | [AutoML Multilabel Text Classification](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference-v2/text-classification-multilabel?view=azureml-api-2) |
+| Text Classification             | Component that kicks off an AutoML job to train an NLP text classification model within an Azure Machine Learning pipeline. | [AutoML Text Classification](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference-v2/text-classification?view=azureml-api-2) |
+| Text Ner                        | Component that kicks off an AutoML job to train an NLP NE (Named Entity Recognition) model within an Azure Machine Learning pipeline. | [AutoML Text Ner](https://learn.microsoft.com/en-us/azure/machine-learning/component-reference-v2/text-ner?view=azureml-api-2) |
 
 
 
